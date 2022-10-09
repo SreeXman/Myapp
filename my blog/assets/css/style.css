@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "montsserrat", sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 30px 10%;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: transparent;
+}
+
+li,
+a,
+button {
+    font-weight: 600;
+    color: azure;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+nav,
+ul,
+li {
+    display: inline-flex;
+    padding: 12px 15px;
+}
+
+nav ul li a {
+    transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover {
+    color: black;
+    transition: all 0.3s ease 0s;
+}
+
+header>button {
+    padding: 9px 25px;
+    background-color: cadetblue;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+header>button:hover {
+    background-color: black;
+    transition: all 0.3s ease 0s;
+}
+
+
+/* wrapper */
+
+.wrapper {
+    background-image: url("../img/back.jpeg");
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.wrapper:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(32, 40, 119, 0.95), rgba(55, 46, 149, 0.95), rgba(83, 49, 177, 0.90), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95));
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    display: flex;
+    padding: 80px 10%;
+    justify-content: space-between;
+    color: azure;
+}
+
+.reve {
+    width: 20%;
+    height: 40%;
+}
+
+footer {
+    display: flex;
+    padding: 30px 10%;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: transparent;
+}
+
+.down {
+    background-color: rgba(83, 49, 177, 0.90);
+}
+
+footer>p {
+    display: inline-flex;
+    width: 100%;
+}
+
+.doomy {
+    margin-right: auto;
+    color: white;
+}
+
+.entity {
+    color: white;
+    text-align: center;
+}
+
+.social-links {
+    margin-left: auto;
+    display: inline-flex;
+}
+
+.bg-facebook {
+    border: none;
+    border-radius: 15px;
+    background-color: blue;
+    padding: 15px 20px;
+}
+
+.bg-twitter {
+    border: none;
+    border-radius: 15px;
+    background-color: skyblue;
+    padding: 15px 20px;
+}
+
+.bg-instagram {
+    border: none;
+    border-radius: 15px;
+    background-color: purple;
+    padding: 15px 20px;
+}
