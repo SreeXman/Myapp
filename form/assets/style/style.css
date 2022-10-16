@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Mono', sans-serif;
+}
+
+body {
+    background-image: url(purple-cartoon-scene-background.jpeg);
+}
+
+label[for="fname"] {
+    font-size: 30px;
+    color: coral;
+}
+
+label[for="DOB"] {
+    width: 100%;
+    margin-right: 120px;
+    text-align: left;
+    font-size: 30px;
+    color: coral;
+}
+
+#gender {
+    margin-left: 90px;
+    height: 22px;
+}
+
+#gender2 {
+    height: 22px;
+}
+
+label[for="lname"] {
+    font-size: 30px;
+    color: coral;
+}
+
+label[for=gender2] {
+    width: 100%;
+    margin-right: 80px;
+    font-size: 20px;
+    color: coral;
+}
+
+label[for=gender] {
+    font-size: 20px;
+    color: coral;
+    padding-right: 20px;
+}
+
+label[for="Gender"] {
+    font-size: 30px;
+    color: coral;
+}
+
+form {
+    align-items: center;
+    align-content: center;
+}
+
+.joint {
+    padding: 15px 5%;
+    background-color: purple;
+    text-align: center;
+    margin: 20px;
+    align-items: center;
+    width: 50%;
+    border-radius: 20px;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.wrapper {
+    display: inline-flex;
+    padding: 30px 20%;
+}
+
+header {
+    align-items: center;
+    justify-content: flex-end;
+    background-color: transparent;
+    background-color: #79af6c;
+}
+
+.heading1 {
+    text-align: right;
+    color: rgb(7, 6, 3);
+    margin-left: 50px;
+}
+
+.btn-contact {
+    margin-left: 50px;
+    padding: 10px;
+    border: none;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 15px;
+    display: flexbox;
+}
+
+#lname {
+    margin-left: 50px;
+    padding: 10px;
+    border: none;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 15px;
+    display: flexbox;
+}
+
+#fname {
+    margin-left: 50px;
+    padding: 10px;
+    border: none;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 15px;
+    display: flexbox;
+}
+
+#btn-submit {
+    text-decoration: double;
+    text-align: center;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+}
+
+#DD {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 25px;
+    margin-top: -5px;
+}
+
+#MM {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 25px;
+    margin-top: -5px;
+}
+
+#YY {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 25px;
+    margin-top: -5px;
+}
+
+.fa-envelope-open {
+    margin-right: 5px;
+}

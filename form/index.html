@@ -1,0 +1,81 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="First validation form">
+    <meta name="author" content="sreeman">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--- style-->
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/util.css">
+    <link rel="stylesheet" href="./assets/style/animation.css">
+    <link rel="stylesheet" href="./assets/style/theme.scss">
+    <!--- style end-->
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Poppins:ital,wght@0,200;0,300;1,300&display=swap" rel="stylesheet">
+    <!---end fonts-->
+    <!--- icons-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MY FORM</title>
+    <script>
+        function myFuntion() {
+            document.getElementById("demo").innerHTML = "Thank you for contacting us, we will get back you via email as soon as possible";
+        }
+    </script>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="wrapper">
+
+            <h1> <span class="heading1"> Registeration Form</span> for <strong>2022</strong> Admission </h1>
+            <ul type="none">
+                <li> <button onclick="myFunction()" id="demo" class="btn-contact" name="Contact"><i class="fa fa-envelope-open"></i>Contact us</button></li>
+            </ul>
+
+        </div>
+    </header>
+    <main class="content">
+
+        <div class="joint">
+            <form action="/action_page.html">
+
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="DOB"> DOB: </label>
+                <input type="text" id="DD" name="DD"> &nbsp;<span class="slash">/</span>&nbsp;<input type="text" id="MM" name="MM">&nbsp;<span class="slash2">/</span> &nbsp;<input type="text" id="YY" name="YY"><br><br>
+                <label for="Gender"> Gender: </label>
+                <input type="checkbox" id="gender" value="Male" name="male1">
+                <label for="gender">Male</label>
+                <input type="checkbox" id="gender2" value="female" name="female2">
+                <label for="gender2">Female</label><br><br>
+                <input id="btn-submit" type="submit" value="Submit">
+
+            </form>
+
+
+
+
+
+        </div>
+
+
+    </main>
+    <footer>
+    </footer>
+
+
+
+</body>
+
+</html>
