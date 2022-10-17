@@ -5,77 +5,77 @@
     font-family: 'Fira Mono', sans-serif;
 }
 
+.joint h1 {
+    margin-top: 20px;
+}
+
 body {
     background-image: url(purple-cartoon-scene-background.jpeg);
 }
 
-label[for="fname"] {
-    font-size: 30px;
-    color: coral;
+#chill,
+.city-box,
+.zi {
+    display: inline-flex;
 }
 
-label[for="DOB"] {
-    width: 100%;
-    margin-right: 120px;
-    text-align: left;
-    font-size: 30px;
-    color: coral;
+.poi {
+    margin-left: 185px;
 }
 
-#gender {
-    margin-left: 90px;
-    height: 22px;
+.ls {
+    margin-left: 150px;
 }
 
-#gender2 {
-    height: 22px;
+.names-box1,
+.names-box2,
+#doc,
+#street,
+#city,
+#state,
+#Postcode,
+#Phone {
+    width: 200px;
+    border: 2px solid black;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
 }
 
-label[for="lname"] {
-    font-size: 30px;
-    color: coral;
-}
-
-label[for=gender2] {
-    width: 100%;
-    margin-right: 80px;
+.fn,
+.io,
+.po {
     font-size: 20px;
-    color: coral;
 }
 
-label[for=gender] {
-    font-size: 20px;
-    color: coral;
-    padding-right: 20px;
-}
-
-label[for="Gender"] {
-    font-size: 30px;
-    color: coral;
-}
-
-form {
-    align-items: center;
-    align-content: center;
+#names {
+    display: inline-flex;
 }
 
 .joint {
-    padding: 15px 5%;
-    background-color: purple;
-    text-align: center;
+    padding: 5px 5%;
     margin: 20px;
-    align-items: center;
-    width: 50%;
-    border-radius: 20px;
+    max-width: 100%;
     border: none;
+    border-radius: 20px;
     margin-top: 30px;
     margin-bottom: auto;
-    text-align: center;
 }
 
 .wrapper {
     display: inline-flex;
     padding: 30px 20%;
+}
+
+.joint:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(164, 170, 221, 0.95), rgba(130, 120, 241, 0.95), rgba(118, 74, 238, 0.9), rgba(167, 128, 223, 0.85), rgba(180, 112, 228, 0.95));
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 header {
@@ -92,6 +92,7 @@ header {
 }
 
 .btn-contact {
+    cursor: pointer;
     margin-left: 50px;
     padding: 10px;
     border: none;
@@ -102,29 +103,29 @@ header {
     display: flexbox;
 }
 
-#lname {
-    margin-left: 50px;
-    padding: 10px;
+.btn-contact::before {
+    transition: all 0.3s ease 0s;
+    background-color: red;
+}
+
+.btn-contact:hover {
+    transition: all 0.3s ease 0s;
+    background-color: red;
+}
+
+
+/* #lname {
     border: none;
-    color: black;
-    font-size: large;
-    font-weight: bold;
-    border-radius: 15px;
     display: flexbox;
 }
 
 #fname {
-    margin-left: 50px;
     padding: 10px;
-    border: none;
-    color: black;
-    font-size: large;
-    font-weight: bold;
-    border-radius: 15px;
     display: flexbox;
-}
+} */
 
 #btn-submit {
+    transition: all 0.3s ease 0s;
     text-decoration: double;
     text-align: center;
     color: black;
@@ -133,27 +134,18 @@ header {
     border-radius: 15px;
     border: none;
     padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
-#DD {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 25px;
-    margin-top: -5px;
+#btn-submit::before {
+    transition: all 0.3s ease 0s;
 }
 
-#MM {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 25px;
-    margin-top: -5px;
-}
-
-#YY {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 25px;
-    margin-top: -5px;
+#btn-submit:hover {
+    transition: all 0.3s ease 0s;
+    background-color: red;
 }
 
 .fa-envelope-open {
