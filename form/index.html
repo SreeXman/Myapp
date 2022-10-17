@@ -36,7 +36,8 @@
 
         <div class="wrapper">
 
-            <h1> <span class="heading1"> Registeration Form</span> for <strong>2022</strong> Admission </h1>
+            <h1> <span class="heading1"> Customer Submission</span> form <strong>2022</strong> </h1> <br>
+
             <ul type="none">
                 <li> <button onclick="myFunction()" id="demo" class="btn-contact" name="Contact"><i class="fa fa-envelope-open"></i>Contact us</button></li>
             </ul>
@@ -46,21 +47,48 @@
     <main class="content">
 
         <div class="joint">
+            <h1>Customer Details</h1><br>
+            <hr><br><br>
+
             <form action="/action_page.html">
 
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname"><br><br>
-                <label for="DOB"> DOB: </label>
-                <input type="text" id="DD" name="DD"> &nbsp;<span class="slash">/</span>&nbsp;<input type="text" id="MM" name="MM">&nbsp;<span class="slash2">/</span> &nbsp;<input type="text" id="YY" name="YY"><br><br>
-                <label for="Gender"> Gender: </label>
-                <input type="checkbox" id="gender" value="Male" name="male1">
-                <label for="gender">Male</label>
-                <input type="checkbox" id="gender2" value="female" name="female2">
-                <label for="gender2">Female</label><br><br>
-                <input id="btn-submit" type="submit" value="Submit">
+                <p class="fn"><strong>Full name<sup> *</sup></strong></p> <br>
+                <div id="names">
+                    <input class="names-box1" type="text" id="fname" name="fname">&nbsp;&nbsp;&nbsp;
 
+                    <input class="names-box2" type="text" id="lname" name="lname"><br>
+                </div><br>
+                <div id="chill">
+                    <p class="fs"> first name</p>
+                    <p class="ls">last name</p>
+                </div>
+                <br><br>
+                <p class="io"><strong>Address</strong><sup> *</sup></p><br>
+                <input type="text" id="doc" name="DD"><br>
+                <p> Street Address</p><br>
+                <input type="text" id="street" name="MM"><br>
+                <p> Street Address Line 2</p><br>
+                <div class="city-box">
+
+                    <input type="text" id="city" name="M">&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="state" name="Y"><br>&nbsp;&nbsp;&nbsp;
+
+                </div><br>
+
+                <div class="zi">
+                    <p>City</p>
+                    <p class="poi">State Prvince </p><br><br>
+
+                </div><br>
+
+
+                <input type="text" id="Postcode" name="M"><br>
+                <p> Postal/Zipcode</p><br>
+
+                <p class="po"><strong>Phone</strong><sup> *</sup></p><br>
+                <input type="text" id="Phone" name="M" placeholder="(000)000-0000"><br>
+
+                <button id="btn-submit" onclick="myFunction()">Submit</button>
             </form>
 
 
