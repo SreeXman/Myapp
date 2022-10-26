@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="First validation form">
+    <meta name="author" content="sreeman">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--- style-->
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/util.css">
+    <link rel="stylesheet" href="./assets/style/animation.css">
+    <link rel="stylesheet" href="./assets/style/theme.scss">
+    <!--- style end-->
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Poppins:ital,wght@0,200;0,300;1,300&display=swap" rel="stylesheet">
+    <!---end fonts-->
+    <!--- icons-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MY FORM</title>
+</head>
+
+<body>
+    <script src="./index.js">
+    </script>
+    <section>
+
+        <header>
+
+            <div class="wrapper">
+                <img id=forms-img src="./assets/img/Forms.png" width="20%" height="10%" alt="form">
+                <h1> <span class="heading1"> JOB Appplication form</span> </h1> <br>
+
+                <ul type="none">
+                    <li> <button onclick="myFunction()" id="demo" class="btn-contact" name="Contact"><i class="fa fa-envelope-open"></i>Contact us</button></li>
+                </ul>
+
+            </div>
+        </header>
+        <main class="content">
+            <form action="/action_page.html">
+                <div class="joint">
+                    <div class="template-container">
+                        <div class="personal">
+                            <h1>Personal Data</h1><br>
+                            <hr><br><br>
+
+
+
+                            <p class="fn"><strong>Full name<sup> *</sup></strong></p> <br>
+                            <div id="names" value="">
+
+                                <input class="names-box1" type="text" id="fname" name="fname" placeholder="first name" required value="" value="">&nbsp;&nbsp;&nbsp;
+
+                                <input class="names-box2" type="text" id="lname" name="lname" placeholder="last name" required value="" value=""><br>
+                            </div><br>
+
+                            <!-- <div id="chill">
+                            <p class="fs"> first name</p>
+                            <p class="ls">last name</p>
+                        </div> -->
+                            <br><br>
+                            <p class="io"><strong>Address</strong><sup> *</sup></p><br>
+                            <input type="text" id="doc" name="DD" placeholder="Street Address" required value="" value=""><br>
+                            <!-- <p> Street Address</p><br> -->
+                            <input type="text" id="street" name="MM" placeholder="Street Address Line 2" required value="" value=""><br>
+                            <!-- <p> Street Address Line 2</p><br> -->
+                            <div class="city-box">
+
+                                <input type="text" id="city" name="M" placeholder="City" required value="" value="">&nbsp;&nbsp;&nbsp;
+                                <input type="text" id="state" name="Y" placeholder="State Province" required value="" value=""><br>&nbsp;&nbsp;&nbsp;
+
+                            </div><br>
+
+                            <!-- <div class="zi">
+                            <p>City</p>
+                            <p class="poi">State Province </p><br><br>
+
+                        </div><br> -->
+
+
+                            <input type="text" id="Postcode" name="M" placeholder="Postal Code" required value="" value=""><br>
+                            <!-- <p> Postal/Zipcode</p><br> -->
+
+                            <div class="contact">
+                                <p class="po"><strong>Contact</strong><sup> *</sup></p><br>
+                                <div class="contact-details">
+
+                                    <input class="pi" type="email" id="email" name="email" placeholder="Email" placeholder="E-mail" pattern=".+@gmail\.com" size="30" required value="">
+                                    <input class="pz" type="text" id="Phone" name="M" placeholder="(000)000-0000"><br><br>
+                                    <!-- <div class="contact-det">
+                                    <p class="email">Email</p><br>
+                                    <p class="ph">Phone Number</p><br>
+                                </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="DOB">
+                            <p class="DOb"><strong>DOB</strong><sup> *</sup></p>
+                            <input class="calendar" type="date" name="DOB" required value="">
+                            <div class="po-radio">
+
+                                <input type="radio" class="po-radio-input" name="po-radio">
+                                <p class="m">Male</p>
+                                <input type="radio" class="po-radio-input" name="po-radio">
+                                <p class="f">Female</p><br>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="po">
+
+                            <p class="nati"> Nationality</p><br>
+                            <input type="text" id="nation" class="nationality" name="Nationality" placeholder="For Example - Indian" value="">
+
+                        </div>
+                        <div class="education&ex">
+
+                            <h1 class="edu-heading">Education & Experience</h1>
+                            <hr>
+                            <div class="storem">
+                                <input class="Stud" type="checkbox" onchange="showHide(this.checked)" id="stud" required value="" name="stud" value="Student">
+                                <label for="stud">I'm a student</label><br>
+                                <input onchange="showHide(this.checked)" class="Emp" type="checkbox" id="emp" required value="" name="emp" value="Employee">
+                                <label for="emp"> I'm a professional</label><br>
+                            </div>
+                            <div class="academic">
+                                <div id="class-ten" class="class10">
+
+                                    <ul type="none" class="academic-list1">
+                                        <li class="class10">
+                                            <li>Class 10 Details <sup> *</sup></li>
+                                            <li><input id="board" name="board" placeholder="Board Name" required value="" value=""></li>
+                                            <li><input id="marks10" name="mark10" placeholder="Marks in %" required value="" value=""></li>
+
+                                        </li>
+                                    </ul>
+                                    <ul type="none" class="academic-list2">
+                                        <li class="class12">
+                                            <li>Class 12 Details <sup> *</sup></li>
+                                            <li><input id="board" name="board" placeholder="Board Name" required value="" value=""></li>
+                                            <li><input id="marks12" name="mark12" placeholder="Marks in %" required value="" value=""></li>
+                                        </li>
+                                    </ul>
+                                    <ul type="none" class="academic-list3">
+                                        <li class="ug">
+                                            <li><label for="ug">UG Details<sup> *</sup></label></li>
+                                            <li><select name="ug" id="ug">
+                                            <option value="B.E">B.E</option>
+                                            <option value="B.Tech">B.Tech</option>
+                                            <option value="B.SC">B.SC</option>
+                                            <option value="BCA">BCA</option>
+                                          </select></li>
+                                            <li>
+                                                <li><select name="ug" id="ug">
+                                            <option value="Computer Science">Computer Science</option>
+                                            <option value="Information technology">Information technology</option>
+                                            <option value="Computer Systems and Designs">Computer Systems and Designs</option>
+                                            <option value="Information Systems">Information Systems</option>
+                                          </select></li>
+                                    </ul>
+                                    <ul type="none" class="academic-list4">
+                                        <li class="pg">
+                                            <li><label for="PG">PG details<sup> *</sup></label></li>
+                                            <li><select name="PG" id="pg">
+                                            <option value="M.E">M.E</option>
+                                            <option value="M.Tech">M.Tech</option>
+                                            <option value="M.SC">M.SC</option>
+                                            <option value="MCA">MCA</option>
+                                          </select></li>
+                                            <li>
+                                                <li><select name="pg" id="pg">
+                                                
+                                               
+                                            <option value="Computer Science">Computer Science</option>
+                                            <option value="Information technology">Information technology</option>
+                                            <option value="Computer Systems and Designs">Computer Systems and Designs</option>
+                                            <option value="Information Systems">Software Systems</option>
+                                          </select></li>
+                                            </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="we">
+                                <label for="we">Work Experience<sup> *</sup></label><br>
+                                <select required value="" name="we" id="we">
+                                    <option required value="" value="0">0</option>
+                                    <option required value="" value="1">1 year</option>
+                                    <option required value="" value="2">2 years</option>
+                                    <option required value="" value="3">3+ years</option>
+                                  </select>
+                            </div>
+                            <div class="about">
+                                <h3 class="about">Tell us about yourself</h3><br>
+                                <textarea class="about-box" placeholder="Type here... about yourself in 300" rows="4" cols="60" maxlength="300"></textarea>
+
+
+                            </div>
+                            <div class="why">
+                                <label for="why" class="why">When can you start working for us?</label>
+                                <select name="why" id="why">
+                              <option value=" Sooner ">immediately</option>
+                              <option value=" 1 ">1 week</option>
+                              <option value=" 2 ">2 weeks</option>
+                              <option value=" 3">3 weeks</option>
+                              <option value=" more">more than a months time</option>
+                            </select>
+
+                            </div>
+
+                            <div class="profile">
+                                <p class="profile">Attach your profile<sup> *</sup></p>
+                                <input type="file" id="myfile" required value="" maxlength="200kb" name="myfile">
+                            </div>
+
+                            <div class="btn-submit">
+                                <button id="btn-submit" class="btn btn-primary" type="submit" onclick="show_alert()">Submit</button>
+                            </div>
+            </form>
+            </div>
+
+        </main>
+    </section>
+
+</body>
+
+</html>
